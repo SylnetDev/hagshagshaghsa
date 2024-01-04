@@ -181,7 +181,7 @@ cat <<EOF >/home/authentication.sh
 #!/bin/bash
 SHELL=/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
-wget -O /home/active.sh "$API_LINK/socksip_active.php?key=$API_KEY" &>/dev/null
+wget -O /home/active.sh "$API_LINK/active.php?key=$API_KEY" &>/dev/null
 sleep 5
 wget -O /home/inactive.sh "$API_LINK/inactive.php?key=$API_KEY" &>/dev/null
 sleep 5
